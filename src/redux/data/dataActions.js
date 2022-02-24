@@ -29,20 +29,20 @@ export const fetchData = () => {
         .getState()
         .blockchain.smartContract.methods.totalSupply()
         .call();
-    let cost = await store
-     .getState()
-     .blockchain.smartContract.methods.cost()
-      .call();
-      //let getNFTPrice = await store
-      //.getState()
-      //.blockchain.smartContract.methods.getNFTPrice()
-       //.call();
+    //let cost = await store
+     //.getState()
+     //.blockchain.smartContract.methods.cost()
+      //.call();
+      let getNFTPrice = await store
+      .getState()
+      .blockchain.smartContract.methods.getNFTPrice()
+       .call();
  
       dispatch(
         fetchDataSuccess({
           totalSupply,
-          cost,
-          //getNFTPrice,
+          //cost,
+          getNFTPrice,
         })
       );
     } catch (err) {
