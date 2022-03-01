@@ -122,7 +122,7 @@ function App() {
   });
 
   const claimNFTs = () => {
-    let cost = CONFIG.WEI_COST;
+    let cost = data.getNFTPrice;
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
     let totalGasLimit = String(gasLimit * mintAmount);
