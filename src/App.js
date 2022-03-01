@@ -280,7 +280,7 @@ function App() {
                 color: "var(--accent-text)",
               }}
             >
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+              MINT YOUR PASS
             </s.TextTitle>
             <s.TextDescription
               style={{
@@ -315,7 +315,7 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Each {CONFIG.SYMBOL} Club Pass costs {data.cost}{" "}
+                  Each {CONFIG.SYMBOL} Club Pass costs {0.1}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
